@@ -29,6 +29,9 @@ public class Main extends JFrame{
 
             }
 
+            //g.drawOval(getMousePosition().getX,getMousePosition().getY,5,5);
+
+
         }
     }
     public Main(){
@@ -37,5 +40,10 @@ public class Main extends JFrame{
         this.setContentPane(canvas);
         this.pack();
         this.setVisible(true);
+    }
+    public void run(){
+        while(true){
+            this.repaint();
+        }
     }
 }
