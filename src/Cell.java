@@ -24,11 +24,11 @@ class Cell{
         g.drawRect(x,y,size,size);
     }
     void paint(Graphics g,int id){
-        if(id=1){
+        if(id==1){
             g.setColor(Color.WHITE);
-        }else if(id =2) {
+        }else if(id ==2) {
             g.setColor(Color.RED);
-        }else if(id=3){
+        }else if(id==3){
             g.setColor(Color.GREEN);
         }else{
             g.setColor(Color.GRAY);
@@ -38,8 +38,8 @@ class Cell{
         g.drawRect(x,y,size,size);
     }
 
-    boolean contains(Point p){
-        if (p != null){
+    public boolean contains(Point p){
+        if (p!= null){
             return (x < p.x && x+size > p.x && y < p.y && y+size > p.y);
         } else {
             return false;
